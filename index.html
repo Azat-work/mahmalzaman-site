@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAHMAL ZAMAN</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #2e7d32;
+      color: white;
+    }
+    header {
+      background-color: #1b5e20;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    #slogan-text {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    .language-buttons {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .language-buttons button {
+      background-color: #fff;
+      color: #1b5e20;
+      border: none;
+      padding: 0.5rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 0.5rem;
+    }
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+    footer {
+      background-color: #1b5e20;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="language-buttons">
+      <button onclick="changeLanguage('ru')">Русский</button>
+      <button onclick="changeLanguage('tr')">Türkçe</button>
+    </div>
+    <h1 id="site-title">MAHMAL ZAMAN</h1>
+    <p id="header-text">Соединяем Туркменистан с возможностями в Турции</p>
+    <p id="slogan-text">Ваш путь к стабильной и безопасной работе в Турции начинается с нами!</p>
+  </header>
+
+  <section>
+    <h2 id="about-title">О нас</h2>
+    <p id="about-text">Мы — кадровая компания, ориентированная на поиск и подбор проверенных работодателей в Турции для граждан Туркменистана. Работаем прозрачно, быстро и честно. Наша цель — сделать ваш путь к достойной работе простым и безопасным.</p>
+  </section>
+
+  <section>
+    <h2 id="offer-title">Что мы предлагаем</h2>
+    <ul>
+      <li id="offer-1">Надёжные работодатели из Турции</li>
+      <li id="offer-2">Легальное трудоустройство</li>
+      <li id="offer-3">Полное сопровождение — от консультации до подписания контракта</li>
+      <li id="offer-4">Поддержка на всех этапах</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="additional-info-title">Зачем выбрать нас?</h2>
+    <p id="additional-info-text">Мы не просто связываем людей с работодателями. Мы создаём крепкие и долгосрочные связи, которые позволяют нашим клиентам не только найти работу, но и строить карьеру. Каждый этап процесса — от первого контакта до устройства на работу — сопровождается поддержкой и гарантией качества. Мы делаем всё, чтобы ваше трудоустройство было безопасным и соответствовало всем нормам.</p>
+  </section>
+
+  <section class="contact-info">
+    <h2 id="contact-title">Контакты</h2>
+    <p><strong>Адрес:</strong> Туркменистан, г. Ашхабад, ул. G.Kuliyew, ТЦ Aydyn yol hyzmatlar, этаж 2, каб. №2</p>
+    <p><strong>Телефон:</strong> +993 62 728182</p>
+    <p><strong>WhatsApp:</strong> +993 64 700088</p>
+    <p><strong>Email:</strong> international0788@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>MAHMAL ZAMAN © 2025. Все права защищены.</p>
+  </footer>
+
+  <script>
+    const languageData = {
+      "ru": {
+        "siteTitle": "MAHMAL ZAMAN",
+        "headerText": "Соединяем Туркменистан с возможностями в Турции",
+        "sloganText": "Ваш путь к стабильной и безопасной работе в Турции начинается с нами!",
+        "aboutTitle": "О нас",
+        "aboutText": "Мы — кадровая компания, ориентированная на поиск и подбор проверенных работодателей в Турции для граждан Туркменистана. Работаем прозрачно, быстро и честно. Наша цель — сделать ваш путь к достойной работе простым и безопасным.",
+        "offerTitle": "Что мы предлагаем",
+        "offer1": "Надёжные работодатели из Турции",
+        "offer2": "Легальное трудоустройство",
+        "offer3": "Полное сопровождение — от консультации до подписания контракта",
+        "offer4": "Поддержка на всех этапах",
+        "additionalInfoTitle": "Зачем выбрать нас?",
+        "additionalInfoText": "Мы не просто связываем людей с работодателями. Мы создаём крепкие и долгосрочные связи, которые позволяют нашим клиентам не только найти работу, но и строить карьеру. Каждый этап процесса — от первого контакта до устройства на работу — сопровождается поддержкой и гарантией качества. Мы делаем всё, чтобы ваше трудоустройство было безопасным и соответствовало всем нормам.",
+        "contactTitle": "Контакты"
+      },
+      "tr": {
+        "siteTitle": "MAHMAL ZAMAN",
+        "headerText": "Türkmenistan ile Türkiye arasında fırsatlar yaratıyoruz",
+        "sloganText": "Türkiye'de güvenli ve istikrarlı bir işe giden yol bizimle başlar!",
+        "aboutTitle": "Hakkımızda",
+        "aboutText": "Biz, Türkmenistan vatandaşları için Türkiye'de güvenilir işverenler bulmaya ve işe alım yapmaya odaklanan bir istihdam şirketiyiz. Şeffaf, hızlı ve güvenilir çalışıyoruz. Amacımız, size güvenli ve kolay bir iş bulma yolunu sunmaktır.",
+        "offerTitle": "Ne Sunuyoruz",
+        "offer1": "Türkiye'den güvenilir işverenler",
+        "offer2": "Yasal çalışma imkanı",
+        "offer3": "Danışmanlıktan sözleşme imzalatmaya kadar tam destek",
+        "offer4": "Her aşamada destek",
+        "additionalInfoTitle": "Neden Bizi Seçmelisiniz?",
+        "additionalInfoText": "Biz sadece insanları işverenlerle buluşturmuyoruz. Güçlü ve uzun vadeli bağlar kuruyoruz, böylece müşterilerimiz sadece iş bulmakla kalmaz, aynı zamanda kariyerlerini de inşa ederler. Sürecin her aşaması — ilk temastan iş görüşmesine kadar — destek ve kalite garantisiyle tamamlanır. İşe alım sürecinizin güvenli ve her türlü yasal gerekliliğe uygun olmasını sağlıyoruz.",
+        "contactTitle": "İletişim"
+      }
+    };
+
+    function changeLanguage(lang) {
+      const data = languageData[lang];
+      document.getElementById('site-title').innerText = data.siteTitle;
+      document.getElementById('header-text').innerText = data.headerText;
+      document.getElementById('slogan-text').innerText = data.sloganText;
+      document.getElementById('about-title').innerText = data.aboutTitle;
+      document.getElementById('about-text').innerText = data.aboutText;
+      document.getElementById('offer-title').innerText = data.offerTitle;
+      document.getElementById('offer-1').innerText = data.offer1;
+      document.getElementById('offer-2').innerText = data.offer2;
+      document.getElementById('offer-3').innerText = data.offer3;
+      document.getElementById('offer-4').innerText = data.offer4;
+      document.getElementById('additional-info-title').innerText = data.additionalInfoTitle;
+      document.getElementById('additional-info-text').innerText = data.additionalInfoText;
+      document.getElementById('contact-title').innerText = data.contactTitle;
+    }
+  </script>
+</body>
+</html>
